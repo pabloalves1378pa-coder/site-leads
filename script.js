@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
     return;
   }
 
-  const numeroDestino = '34991727924';
+  const numeroDestino = '34991727924'; // Seu número
   const texto = `Olá, meu nome é ${nome} e quero receber uma proposta.`;
   const linkWhatsapp = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(texto)}`;
 
