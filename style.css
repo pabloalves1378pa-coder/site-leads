@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #0f172a;
-  color: #e5e7eb;
+  background: #000000; /* fundo preto */
+  color: #ffffff;      /* texto branco */
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: rgba(2,6,23,0.9);
+  background: rgba(0,0,0,0.95);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -34,40 +34,39 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #e5e7eb;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
 
 header nav ul li a:hover {
-  color: #38bdf8;
+  color: #cccccc; /* branco mais claro ao passar mouse */
 }
 
 /* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: #000000;
 }
 
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  background: linear-gradient(90deg, #38bdf8, #22d3ee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  color: #dddddd;
 }
 
 .hero .btn {
   padding: 15px 25px;
-  background: linear-gradient(90deg, #38bdf8, #22d3ee);
-  color: #020617;
+  background: #ffffff;
+  color: #000000;
   border-radius: 12px;
   font-weight: bold;
   text-decoration: none;
@@ -75,7 +74,7 @@ header nav ul li a:hover {
 }
 
 .hero .btn:hover {
-  transform: translateY(-2px);
+  background: #cccccc;
 }
 
 /* SEÇÕES */
@@ -87,7 +86,7 @@ header nav ul li a:hover {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 25px;
-  color: #38bdf8;
+  color: #ffffff;
 }
 
 /* CARDS */
@@ -99,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .card {
-  background: #020617;
+  background: #111111;
   padding: 20px;
   border-radius: 12px;
   width: 250px;
@@ -109,7 +108,7 @@ header nav ul li a:hover {
 .card i {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #38bdf8;
+  color: #ffffff;
 }
 
 .card h3 {
@@ -117,12 +116,12 @@ header nav ul li a:hover {
 }
 
 .card p {
-  color: #cbd5f5;
+  color: #dddddd;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+  box-shadow: 0 10px 20px rgba(255,255,255,0.2);
 }
 
 /* FORMULÁRIO */
@@ -142,15 +141,15 @@ label {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #020617;
-  border: 1px solid #1e293b;
+  background: #111111;
+  border: 1px solid #333333;
   padding: 0 12px;
   border-radius: 10px;
   margin-top: 6px;
 }
 
 .input-box i {
-  color: #38bdf8;
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
@@ -159,22 +158,22 @@ label {
   background: transparent;
   flex: 1;
   padding: 14px 0;
-  color: #e5e7eb;
+  color: #ffffff;
 }
 
 .input-box input::placeholder {
-  color: #64748b;
+  color: #aaaaaa;
 }
 
 .input-box:focus-within {
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 2px rgba(56,189,248,0.3);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
 }
 
 button {
   padding: 15px;
-  background: linear-gradient(90deg, #38bdf8, #22d3ee);
-  color: #020617;
+  background: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 12px;
   font-size: 1rem;
@@ -184,10 +183,11 @@ button {
 }
 
 button:hover {
+  background: #cccccc;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(56,189,248,0.4);
 }
 
+/* MENSAGEM */
 .mensagem {
   margin-top: 18px;
   text-align: center;
@@ -196,10 +196,10 @@ button:hover {
 
 /* RODAPÉ */
 footer {
-  background: #020617;
+  background: #000000;
   text-align: center;
   padding: 20px;
-  color: #64748b;
+  color: #aaaaaa;
   margin-top: 40px;
 }
 
