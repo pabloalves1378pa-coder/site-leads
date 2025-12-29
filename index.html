@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site Profissional</title>
+  <title>MDAL TECH | Criação de Sites Profissionais</title>
 
-  <!-- CSS -->
+  <meta name="description" content="Criação de sites profissionais para empresas, profissionais e estabelecimentos. Planos básico, profissional e premium.">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Ícones -->
@@ -13,96 +14,131 @@
 </head>
 <body>
 
-  <!-- MENU -->
+  <!-- HEADER -->
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="img/logo.png" alt="MDAL TECH">
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#fundador">Fundador</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- HERO / CAPA -->
+  <!-- HERO -->
   <section class="hero">
-    <h1>Bem-vindo ao MDAL TECH</h1>
-    <p>Transforme sua ideia em realidade com nossos serviços</p>
-    <a href="#contato" class="btn">Fale Conosco</a>
+    <div class="container">
+      <h1>Sites profissionais que transformam visitantes em clientes</h1>
+      <p>
+        Criamos sites modernos, rápidos e estratégicos para empresas,
+        profissionais e estabelecimentos que querem vender mais no digital.
+      </p>
+      <a href="#planos" class="btn">Ver Planos</a>
+    </div>
   </section>
 
   <!-- SOBRE -->
   <section id="sobre" class="section">
-    <h2>Sobre Nós</h2>
-    <p>Somos especializados em criação de sites. Nosso objetivo é entregar soluções de qualidade e resultados reais para nossos clientes.</p>
+    <div class="container">
+      <h2>Sobre a MDAL TECH</h2>
+      <p>
+        A MDAL TECH desenvolve sites profissionais focados em credibilidade,
+        posicionamento e conversão. Cada projeto é pensado para gerar
+        autoridade e facilitar o contato com seus clientes.
+      </p>
+    </div>
   </section>
 
-  <!-- SERVIÇOS / TÓPICOS -->
-  <section id="servicos" class="section">
-    <h2>Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <i class="fa-solid fa-chart-line"></i>
-        <h3>Psicólogos</h3>
-        <p>Agrega credibilidade ao seu trabalho.</p>
-      </div>
-      <div class="card">
-        <i class="fa-solid fa-lightbulb"></i>
-        <h3>Consultorias</h3>
-        <p>Apresenta melhor seu trabalho.</p>
-      </div>
-      <div class="card">
-        <i class="fa-solid fa-gear"></i>
-        <h3>Empresas</h3>
-        <p>Passar maior credibilidade aos seus clientes e parceiros.</p>
+  <!-- PLANOS -->
+  <section id="planos" class="section section-dark">
+    <div class="container">
+      <h2>Planos de Criação de Sites</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Básico</h3>
+          <p>Ideal para quem precisa marcar presença online.</p>
+          <ul>
+            <li>Site institucional simples</li>
+            <li>Design profissional</li>
+            <li>Responsivo (celular)</li>
+            <li>Botão WhatsApp</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline">Solicitar</a>
+        </div>
+
+        <div class="card destaque">
+          <h3>Profissional</h3>
+          <p>Para empresas que querem credibilidade e mais contatos.</p>
+          <ul>
+            <li>Site completo e estratégico</li>
+            <li>Copy focada em conversão</li>
+            <li>Formulário de contato</li>
+            <li>WhatsApp integrado</li>
+            <li>SEO básico</li>
+          </ul>
+          <a href="#contato" class="btn">Solicitar</a>
+        </div>
+
+        <div class="card">
+          <h3>Premium</h3>
+          <p>Para quem quer presença digital de alto nível.</p>
+          <ul>
+            <li>Site personalizado</li>
+            <li>Identidade visual</li>
+            <li>Páginas extras</li>
+            <li>SEO avançado</li>
+            <li>Suporte e ajustes</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline">Solicitar</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section">
-    <h2>Contato</h2>
-    <form id="leadForm">
-      <label>
-        Nome
-        <div class="input-box">
-          <i class="fa-solid fa-user"></i>
-          <input type="text" name="nome" placeholder="Seu nome" required>
-        </div>
-      </label>
-
-      <label>
-        WhatsApp
-        <div class="input-box">
-          <i class="fa-brands fa-whatsapp"></i>
-          <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required>
-        </div>
-      </label>
-
-      <label>
-        E-mail (opcional)
-        <div class="input-box">
-          <i class="fa-solid fa-envelope"></i>
-          <input type="email" name="email" placeholder="seu@email.com">
-        </div>
-      </label>
-
-      <button type="submit">Quero receber contato</button>
-    </form>
-
-    <p id="mensagem" class="mensagem"></p>
+  <!-- FUNDADOR -->
+  <section id="fundador" class="section">
+    <div class="container fundador-content">
+      <h2>Fundador</h2>
+      <h3>Masuke</h3>
+      <p>
+        A MDAL TECH nasceu da visão de Masuke, focado em criar soluções digitais
+        que posicionam empresas e profissionais de forma estratégica.
+      </p>
+    </div>
   </section>
 
-  <!-- RODAPÉ -->
+  <!-- CONTATO -->
+  <section id="contato" class="section section-dark">
+    <div class="container">
+      <h2>Solicite seu Orçamento</h2>
+
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="tel" placeholder="Seu WhatsApp" required>
+        <input type="email" placeholder="Seu e-mail (opcional)">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/55SEUNUMERO" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
   <footer>
-    <p>© 2025 MDAL TECH. Todos os direitos reservados.</p>
+    <p>© 2025 MDAL TECH — Criação de Sites Profissionais</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
-
