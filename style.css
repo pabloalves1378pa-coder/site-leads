@@ -2,216 +2,161 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #000000; /* fundo preto */
-  color: #ffffff;      /* texto branco */
-  line-height: 1.6;
+  background: #000;
+  color: #fff;
 }
 
-/* MENU */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
 header {
+  border-bottom: 1px solid #222;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background: rgba(0,0,0,0.95);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 20px 0;
 }
 
-header .logo img {
-  width: 120px;
+.logo img {
+  height: 60px;
 }
 
-header nav ul {
-  display: flex;
+.menu {
   list-style: none;
+  display: flex;
   gap: 20px;
 }
 
-header nav ul li a {
-  color: #ffffff;
+.menu a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-header nav ul li a:hover {
-  color: #cccccc;
 }
 
 /* HERO */
 .hero {
+  padding: 100px 0;
   text-align: center;
-  padding: 80px 20px;
-  background: #000000;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #ffffff;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-  color: #dddddd;
+  margin: 20px 0;
+  color: #ccc;
 }
 
-.hero .btn {
-  padding: 15px 25px;
-  background: #ffffff;
-  color: #000000;
-  border-radius: 12px;
-  font-weight: bold;
+.btn {
+  background: #fff;
+  color: #000;
+  padding: 15px 30px;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.hero .btn:hover {
-  background: #cccccc;
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-/* SEÇÕES */
+/* SECTIONS */
 .section {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 80px 0;
+}
+
+.section-dark {
+  background: #111;
 }
 
 .section h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* CARDS */
+/* CARDS / PLANOS */
 .cards {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .card {
-  background: #111111;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  transition: 0.3s;
+  background: #000;
+  border: 1px solid #222;
+  padding: 30px;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.card i {
-  font-size: 2rem;
+.card ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.card li {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #ccc;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.destaque {
+  border: 2px solid #fff;
 }
 
-.card p {
-  color: #dddddd;
+/* FUNDADOR */
+.fundador-content {
+  max-width: 700px;
+  text-align: center;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255,255,255,0.2);
-}
-
-/* FORMULÁRIO */
+/* FORM */
 form {
+  max-width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 400px;
-  margin: 0 auto;
+  gap: 15px;
 }
 
-label {
-  font-size: 0.85rem;
-}
-
-.input-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #111111;
-  border: 1px solid #333333;
-  padding: 0 12px;
-  border-radius: 10px;
-  margin-top: 6px;
-}
-
-.input-box i {
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-
-.input-box input {
+input, button {
+  padding: 15px;
+  border-radius: 5px;
   border: none;
-  background: transparent;
-  flex: 1;
-  padding: 14px 0;
-  color: #ffffff;
-}
-
-.input-box input::placeholder {
-  color: #aaaaaa;
-}
-
-.input-box:focus-within {
-  border-color: #ffffff;
-  box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
 }
 
 button {
-  padding: 15px;
-  background: #ffffff;
-  color: #000000;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
+  background: #fff;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-button:hover {
-  background: #cccccc;
-  transform: translateY(-2px);
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
 }
 
-/* MENSAGEM */
-.mensagem {
-  margin-top: 18px;
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-/* RODAPÉ */
+/* FOOTER */
 footer {
-  background: #000000;
   text-align: center;
   padding: 20px;
-  color: #aaaaaa;
-  margin-top: 40px;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+  color: #aaa;
 }
